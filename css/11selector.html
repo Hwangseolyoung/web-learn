@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        h1 {
+            color:blue;
+        }
+
+        .note {
+            text-decoration: underline;
+        }
+
+        .error {
+            text-decoration: line-through;
+        }
+
+        #head3 {
+            font-size: 3em;
+        }
+        /* 클래스를 두가지 이상 사용할때는 붙여쓰기 */
+        .note.error {
+            color:red;
+        }
+
+        p.note {
+            font-family: D2Coding, monospace;
+        }
+
+    </style>
+</head>
+<body>
+    <!-- h1#head$.note.*3>lorem5 -->
+    <h1 id="head1" class="note">Lorem ipsum dolor sit amet.</h1>
+    <h1 id="head2" class="note">Consequuntur et amet laborum repellat!</h1>
+    <h1 id="head3" class="note">Atque tempora quae sint dolorem!</h1>
+
+    <!-- h1#head$@4.error*3>lorem3 -->
+    <h1 id="head4" class="error">Lorem, ipsum dolor.</h1>
+    <h1 id="head5" class="error">Quidem, quisquam nostrum.</h1>
+    <h1 id="head6" class="error">Saepe, obcaecati molestias.</h1>
+
+    <!-- h1#head$@7.note.error*2>lorem3 -->
+    <h1 id="head7" class="note error">Lorem, ipsum dolor.</h1>
+    <h1 id="head8" class="note error">Saepe, molestias? Suscipit!</h1>
+
+    <!-- p.note*2>lorem -->
+    <p class="note">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Adipisci eligendi nobis laudantium sit. Quam vero delectus, saepe odio nesciunt ut adipisci repellendus, iure illum necessitatibus eaque at expedita iusto consectetur?</p>
+    <p class="note">Quam veniam iusto at animi, quisquam delectus omnis necessitatibus alias. Laboriosam rerum facere, esse dicta eius quia deleniti ipsam accusamus reprehenderit quaerat commodi a modi aliquam, fugit enim. Commodi, voluptate?</p>
+</body>
+<html>
