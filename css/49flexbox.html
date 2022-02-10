@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        .item {
+            text-align: center;
+            font size: 2em;
+        }
+        .item:nth-child(odd) {
+            background-color: gold;
+            color:red;
+        }
+        .item:nth-child(even) {
+            background-color: indigo;
+            color: white;
+        }
+        .box {
+            display: flex;
+            height: 300px;
+        }
+        .menu-container {
+            display: flex;
+            background-color: #222;
+        }
+
+        .menu-item {
+            font-size:20px;
+            font-weight: bold;
+            padding: 7px 15px;
+            text-align: center;
+            color:aliceblue;
+            border: 5px solid #222;
+            box-sizing:border-box;
+        }
+
+        .menu-item:hover {
+            background-color: #999;
+            border-color: #999;
+            border-bottom-color: gold;
+            border-top-color: gold;
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="box">
+    <!-- #ex$.item*5{$} -->
+    <div id="ex1" class="item">1</div>
+    <div id="ex2" class="item">2</div>
+    <div id="ex3" class="item">3</div>
+    <div id="ex4" class="item">4</div>
+    <div id="ex5" class="item">5</div>
+    </div>
+
+    <hr>
+
+    <!-- .menu-container>.menu-item*5>lorem1 -->
+    <div class="menu-container">
+        <!-- flex container 가로로 배치하여 써준다 -->
+        <!-- flex item-아래 5개의 자식들이다 -->
+        <div class="menu-item">Lorem.</div>
+        <div class="menu-item">Sit!</div>
+        <div class="menu-item">Eveniet.</div>
+        <div class="menu-item">Ratione?</div>
+        <div class="menu-item">Cupiditate!</div>
+    </div>
+
+</body>
+<html>
