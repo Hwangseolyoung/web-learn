@@ -23,18 +23,19 @@
 
 
     <script>
-        console.log("태그 명으로 요소를 가져오기");
+        console.log("태그명으로 요소를 가져오기");
         console.log(document.getElementsByTagName("h1"));
         console.log(document.getElementsByTagName("p"));
 
-        console.log("태그 명으로 얻어온 요소 중 특정 요소 가져오기");
+        console.log("태그명으로 얻어온 요소 중 특정 요소 가져오기");
         console.log(document.getElementsByTagName("h1")[0]);
         console.log(document.getElementsByTagName("h1")[1]);
 
         console.log(document.getElementsByTagName("p")[0]);
         console.log(document.getElementsByTagName("p")[1]);
 
-
+        // 뒤에 [0] 넣어주면 첫번째 요소를 가져옴
+        // 요소는 0번 부터 시작한다.
 
 
     </script>
