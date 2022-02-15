@@ -10,24 +10,20 @@
 </head>
 <body>
     
-    <!-- input#input1*2^h1#head1>lorem3 -->
-    <input type="text" id="input1"> <br>
-    <input type="text" id="input2">
-
-    <h1 id="head1">
-        Lorem, ipsum dolor.
-    </h1>
-
     <script>
-        document.getElementById("input1").onkeyup = function() {
-            // console.log("키업!");
-            // console.log(document.getElementById("input1").value);
-            document.getElementById("head1").style.color = document.getElementById("input1").value;
-        }
 
-        document.getElementById("input2").onkeyup = function() {
-            document.getElementById("head1").style.backgroundColor = document.getElementById("input2").value;
-        }
+        console.log(3 + 5); // 직접 입력해서 값을 출력할 수 있다.
+
+        let a = 3;
+        let b = 5;
+        console.log(a + b); // 8
+
+        let c = a + b;
+        console.log(c); // 8
+
+        // alert을 쓰면 이 페이지의 내용 창에 출력해줌
+        alert(c);
+        alert("hello javascpript");
 
     </script>
 

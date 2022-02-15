@@ -9,25 +9,17 @@
     </style>
 </head>
 <body>
+    <!-- p#result -->
+    <p id="result"></p>
     
-    <!-- input#input1*2^h1#head1>lorem3 -->
-    <input type="text" id="input1"> <br>
-    <input type="text" id="input2">
-
-    <h1 id="head1">
-        Lorem, ipsum dolor.
-    </h1>
-
     <script>
-        document.getElementById("input1").onkeyup = function() {
-            // console.log("키업!");
-            // console.log(document.getElementById("input1").value);
-            document.getElementById("head1").style.color = document.getElementById("input1").value;
-        }
+        document.getElementById("result").innerHTML = "hello javascript";
 
-        document.getElementById("input2").onkeyup = function() {
-            document.getElementById("head1").style.backgroundColor = document.getElementById("input2").value;
-        }
+        let a = 3;
+        document.getElementById("result").innerHTML = a; // 변수로 값을 바꿔줄 수 있음
+
+        a = "hi"; // a 값을 변경해서 할당해준 상태
+        document.getElementById("result").innerHTML = a; // 변경한 할당값을 출력하게 입력해줘야 함
 
     </script>
 
