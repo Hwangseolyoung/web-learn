@@ -15,21 +15,20 @@
     <p id="result"></p>
 
     <script>
-        document.getElementById("button1").onclick = function() {
-            let age = document.getElementById("input1").value;
-            age = Number(age);
+       document.getElementById("button1").onclick = function() {
+           let age = document.getElementById("input1").value;
+           age = Number(age);
 
-            if (age >= 20) {
-                document.getElementById("result").innerHTML = "성인입니다.";
-            } else if (age >= 13) {
-                document.getElementById("result").innerHTML = "청소년입니다.";
-            } else if (age >= 8) {
-                document.getElementById("result").innerHTML = "어린이입니다.";
-            } else {
-                document.getElementById("result").innerHTML = "유아입니다.";
-            }
-
-        }
+           if (age >=20) {
+               document.getElementById("result").innerHTML = "성인입니다.";
+           } else if (age >= 13) {
+               document.getElementById("result").innerHTML = "청소년 입니다.";
+           } else if (age >= 8) { 
+               document.getElementById("result").innerHTML = "어린이입니다.";
+           } else {
+               document.getElementById("result").innerHTML = "유아입니다.";
+           }
+       }
 
     </script>
 
