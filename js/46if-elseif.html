@@ -16,8 +16,8 @@
 
     <script>
         document.querySelector("#button1").onclick = function() {
-            let score = document.querySelector("#input1").value;
-            score = Number(score);
+            let score = document.querySelector("#input1").value; 
+            score = Number(score); // input1이 string 타입이므로 number 타입으로 변경해줘야 한다.
 
             if (score >= 90) {
                 document.querySelector("#result1").innerHTML = "A등급";
@@ -26,7 +26,7 @@
             } else if (score >= 70) {
                 document.querySelector("#result1").innerHTML = "C등급";
             } else if (score >= 60) {
-                document.querySelector("#result1").innerHTML = "C등급";
+                document.querySelector("#result1").innerHTML = "D등급";
             } else {
                 document.querySelector("#result1").innerHTML = "F등급";
             }
