@@ -17,12 +17,12 @@
             console.log(arr1[i]);
         }
 
-        // for ... of
+        // for ... of 문법
         for (let item of arr1) {
             console.log(item);
         }
 
-        let arr2 = [3, 7, 2, 1, 00, 99, 2];
+        let arr2 = [3, 7, 2, 1, 0, 99, 2];
 
         // 코드 작성 : for of 사용해서 모든 값을 더해서 출력
         let sum = 0;
@@ -40,7 +40,7 @@
 
         let arr3 = [[6, 5, 1, 2], [0, 1, 2], [9, 8, 7, 2], [9, 3, 4]];
         //arr3의 모든 값 더해서 출력(for of 사용)
-        sum = 0;
+        sum = 0; // 이전에 선언한 적이 있으므로 값만 변경;
         for (let subArray of arr3) {
             for (let item of subArray) {
                 sum += a;

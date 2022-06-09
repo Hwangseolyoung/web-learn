@@ -27,27 +27,27 @@
 
         let str = "";
 
-        for (let i = 0; i < arr2.length; i++) {
-            str = str + arr2[i];
+        for (i = 0; i < arr2.length; i++) {
+            str = str + arr2[i]
         }
 
         console.log(str); // "javascripthellobye"
 
+        // 짝수 인덱스 아이템 더하기
         let sumEven = 0;
         for (let i = 0; i < arr1.length; i += 2) {
             sumEven += arr1[i];
         }
         console.log(sumEven);
 
+        // 홀수 인덱스 아이템 더하기
         let sumOdd = 0;
         for (let i = 1; i < arr1.length; i += 2) {
             sumOdd += arr1[i];
         }
         console.log(sumOdd);
 
-
-
-        // 코드작성
+        // 문자열이 뒤에서 부터 출력되게 코드작성
         let backStr = "";
 
         for (let i = arr2.length - 1; i >= 0; i--) {
@@ -57,7 +57,7 @@
         console.log(backStr); // "byehelloscriptjava"
 
         // 코드 작성
-        let revers = "";
+        let reverse = "";
 
         for (let i = arr2.length - 1; i >= 0; i--) {
             let letters = arr2[i].split("");
